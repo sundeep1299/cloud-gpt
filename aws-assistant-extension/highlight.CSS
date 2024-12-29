@@ -1,0 +1,31 @@
+.aws-assistant-highlight {
+  position: relative !important;
+  box-shadow: 0 0 0 2px #ff9900 !important;
+  border-radius: 4px !important;
+  z-index: 10000 !important;
+}
+
+.step-badge {
+  position: absolute !important;
+  top: -20px !important;
+  left: -10px !important;
+  background: #232f3e !important;
+  color: white !important;
+  min-width: 24px !important;
+  height: auto !important;
+  padding: 4px !important;
+  border-radius: 4px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  z-index: 10001 !important;
+  border: 2px solid #ff9900 !important;
+}
+
+.step-badge small {
+  font-size: 8px !important;
+  opacity: 0.8 !important;
+}

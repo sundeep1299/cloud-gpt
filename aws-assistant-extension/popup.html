@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Assistant</title>
+  <style>
+    body {
+      width: 350px;
+      height: 500px;
+      padding: 0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .header {
+      padding: 12px;
+      background: #232f3e;
+      color: white;
+      font-weight: bold;
+      border-bottom: 2px solid #ff9900;
+    }
+    
+    .chat-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px;
+      background: #f8f9fa;
+    }
+    
+    .message {
+      margin-bottom: 12px;
+      max-width: 85%;
+      padding: 8px 12px;
+      border-radius: 12px;
+    }
+    
+    .user-message {
+      background: #ff9900;
+      color: white;
+      margin-left: auto;
+    }
+    
+    .assistant-message {
+      background: white;
+      border: 1px solid #ddd;
+    }
+    
+    .input-container {
+      padding: 12px;
+      background: white;
+      border-top: 1px solid #ddd;
+      display: flex;
+    }
+    
+    #query-input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+    
+    .send-button {
+      background: #ff9900;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .step {
+      margin-top: 8px;
+      padding: 4px 8px;
+      background: #f0f0f0;
+      border-radius: 4px;
+    }
+    
+    .settings-container {
+      padding: 12px;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">AWS Assistant powered by Claude</div>
+  <div class="chat-container" id="chat-container"></div>
+  <div class="input-container">
+    <input type="text" id="query-input" placeholder="Ask about AWS services...">
+    <button class="send-button" id="send-button">Send</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
